@@ -1,7 +1,7 @@
 const taskInput = document.getElementById("taskInput");
     const taskList = document.getElementById("taskList");
 
-    // Load saved tasks
+    
     document.addEventListener("DOMContentLoaded", loadTasks);
 
     function addTask() {
