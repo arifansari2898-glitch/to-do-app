@@ -8,7 +8,7 @@ function signup(event) {
     document.getElementById("msg").innerText = "Please fill all fields.";
     return;
   }
-setTimeout(() => window.location.href = "login.html", 1500);
+
   // Get existing users from localStorage
   let users = JSON.parse(localStorage.getItem("users")) || {};
 
