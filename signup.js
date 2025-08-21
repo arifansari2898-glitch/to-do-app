@@ -23,5 +23,5 @@ function signup(event) {
 
   document.getElementById("msg").style.color = "green";
   document.getElementById("msg").innerText = "Account created! Go to login.";
-   window.location.href ="login.html";
+  setTimeout(() =>{ window.location.href = "login.html";}, 1500);
 }
