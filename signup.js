@@ -9,15 +9,14 @@ function signup(event) {
     return;
   }
 
-  // Get existing users from localStorage
+ 
   let users = JSON.parse(localStorage.getItem("users")) || {};
 
   if (users[username]) {
     document.getElementById("msg").innerText = "User already exists!";
     return;
   }
-
-  // Save new user
+ 
   users[username] = password;
   localStorage.setItem("users", JSON.stringify(users));
 

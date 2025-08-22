@@ -79,11 +79,21 @@
       color: white;
       font-size: 12px;
     }
-     
- 
+     footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  padding-bottom: 18px;
+  z-index: 10;
+}
+
   </style>
 </head>
 <body>
+   
   <div class="todo-container">
     <h2>To-Do List ✅</h2>
   
@@ -92,11 +102,10 @@
       <button onclick="addTask()">Add</button>
     </div>
     <ul id="taskList"></ul>
+     <button onclick="logout()">Logout</button>
   </div>
 <footer>
- <button onclick="logout()">Logout</button>
-
-
+      <div class="app-logo">Taskify by Arif</div>
 </footer>
   <script src="script.js"></script>
 </body>
